@@ -1,0 +1,169 @@
+/* 🌙 General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌆 Body Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* 🌟 Headings */
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* 📄 Paragraph */
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.7;
+    text-align: center;
+    font-size: 1rem;
+    color: #e2e8f0;
+}
+
+/* ✉️ Contact Page Specific */
+body.cnt p {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 8px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+body.cnt strong {
+    color: #60a5fa;
+    font-weight: 600;
+}
+
+/* 🌐 Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+footer a {
+    color: #60a5fa;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #93c5fd;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+/* === Navbar Styling === */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* To prevent content from hiding behind navbar */
+body {
+    margin: 0;
+    padding-top: 65px;
+    /* navbar height ke hisab se space */
+    background-color: #0f0f0f;
+    color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 8px;
+    }
+
+    .nav-links a {
+        margin: 5px 10px;
+        font-size: 16px;
+    }
+}

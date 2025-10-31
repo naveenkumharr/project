@@ -1,0 +1,150 @@
+/* ===== General Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body Styling ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #1e3a8a;
+    /* Dark blue */
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #93c5fd;
+    /* light blue hover */
+}
+
+/* ===== Header Title ===== */
+header h1 {
+    text-align: center;
+    background-color: #2563eb;
+    color: white;
+    padding: 25px 10px;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+/* ===== Main Section ===== */
+main {
+    max-width: 800px;
+    background: white;
+    margin: 40px auto;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2563eb;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* ===== Links ===== */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    background-color: #f3f4f6;
+    padding: 20px 10px;
+    margin-top: 40px;
+    border-top: 2px solid #e5e7eb;
+}
+
+footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+footer .copyright {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    main {
+        width: 90%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+        padding: 18px 5px;
+    }
+}
